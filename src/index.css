@@ -1,0 +1,400 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap");
+
+/* Your custom styles below */
+body,
+html {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  overflow: hidden; /* Prevent any content from spilling out */
+}
+
+/* Fix the parallax class */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Remove the typo */
+  /* backgroundimage: "url('...')"; */
+}
+
+/* Impact cards hover effect */
+.impact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 15px rgba(155, 77, 255, 0.2);
+  scale: 1.02;
+}
+
+.impact-card .impact-image {
+  transition: all 0.5s ease;
+}
+
+.impact-card:hover .impact-image {
+  opacity: 0.9;
+}
+
+/* Modal animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-animate {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content-animate {
+  animation: slideIn 0.4s ease-out;
+}
+
+/* Custom carousel styling */
+.carousel-container {
+  position: relative;
+  padding-bottom: 60px; /* Space for the navigation */
+  height: 500px; /* Set a fixed height - adjust as needed */
+  overflow: hidden;
+}
+
+.projects-carousel .slick-list,
+.impact-carousel .slick-list {
+  height: 420px !important; /* Fixed height for the actual carousel - adjust as needed */
+  overflow: visible;
+}
+
+/* Ensure slides don't change the overall container height */
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit;
+  display: flex !important;
+}
+
+.slick-slide > div {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide default arrows */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+/* Hide default dots */
+.slick-dots {
+  display: none !important;
+}
+
+/* Custom dots container with arrows */
+.custom-dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Custom dots styling */
+.custom-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0 15px;
+}
+
+.custom-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(168, 85, 247, 0.3);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.custom-dot.active {
+  background-color: rgba(168, 85, 247, 1);
+}
+
+/* Custom navigation container */
+.custom-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Carousel navigation bar */
+.carousel-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/* Project counter styling */
+.project-counter {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  color: #a855f7;
+  display: flex;
+  align-items: center;
+}
+
+.project-counter .current {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.project-counter .separator {
+  margin: 0 4px;
+  opacity: 0.7;
+}
+
+.project-counter .total {
+  opacity: 0.7;
+}
+
+/* Carousel controls container */
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Custom arrow buttons */
+.custom-prev-arrow,
+.custom-next-arrow,
+.custom-play-pause-button {
+  background: none;
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  border-radius: 50%;
+  color: #a855f7;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.custom-prev-arrow:hover,
+.custom-next-arrow:hover,
+.custom-play-pause-button:hover {
+  color: #d8b4fe;
+  transform: scale(1.1);
+  border-color: rgba(168, 85, 247, 0.6);
+  background-color: rgba(168, 85, 247, 0.1);
+}
+
+/* Hide default dots */
+.slick-dots {
+  display: none !important;
+}
+
+/* Custom styling for the carousel arrows */
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev {
+  left: -10px;
+}
+
+.slick-next {
+  right: -10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  color: #a855f7; /* Purple color to match your theme */
+}
+
+/* Custom styling for the dots */
+.slick-dots li button:before {
+  color: #a855f7;
+  opacity: 0.25;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #a855f7;
+  opacity: 1;
+}
+
+/* Add hover effect to project cards */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(168, 85, 247, 0.3);
+}
+
+/* Project modal carousel styling */
+.project-carousel-container {
+  position: relative;
+}
+
+.project-carousel-slide {
+  outline: none;
+}
+
+/* Custom modal arrow buttons */
+.custom-modal-prev-arrow,
+.custom-modal-next-arrow {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.custom-modal-prev-arrow:hover,
+.custom-modal-next-arrow:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+
+/* Custom dots for modal carousel */
+.project-carousel-container .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.project-carousel-container .slick-dots li {
+  margin: 0 3px;
+}
+
+.project-carousel-container .custom-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  cursor: pointer;
+}
+
+.project-carousel-container .slick-active .custom-dot {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Modal image styling */
+.project-image-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.modal-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Should match the container height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-carousel-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.project-carousel-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fix for Slick slider container */
+.project-carousel-container .slick-list,
+.project-carousel-container .slick-track,
+.project-carousel-container .slick-slide,
+.project-carousel-container .slick-slide > div {
+  width: 100%;
+  height: 100%;
+}
+
+.project-carousel-container .slick-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For smaller screens, adjust the aspect ratio */
+@media (max-width: 640px) {
+  .modal-image-wrapper {
+    padding-bottom: 75%; /* 4:3 aspect ratio for mobile */
+  }
+}
+
+/* Ensure the carousel container respects the aspect ratio */
+.project-carousel-container .slick-list,
+.project-carousel-container .slick-track {
+  height: 100%;
+}
+
+.project-carousel-slide {
+  outline: none;
+  height: 100%;
+}
