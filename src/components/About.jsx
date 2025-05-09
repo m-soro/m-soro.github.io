@@ -10,13 +10,13 @@ const About = () => {
     {
       title: "Salesforce Certified Administrator",
       image:
-        "https://github.com/m-soro/m-soro.github.io/blob/main/src/assets/images/z_other/sys-admin-logo.png?raw=true",
+        "https://res.cloudinary.com/dmozohlzf/image/upload/v1746806902/sys-admin-logo_u94wdr.png",
       link: "https://trailhead.salesforce.com/en/credentials/administrator",
     },
     {
       title: "Salesforce Certified Platform Developer I",
       image:
-        "https://github.com/m-soro/m-soro.github.io/blob/main/src/assets/images/z_other/pd1-logo.png?raw=true",
+        "https://res.cloudinary.com/dmozohlzf/image/upload/v1746806912/pd1-logo_eu1cud.png",
       link: "https://trailhead.salesforce.com/en/credentials/platformdeveloperi",
     },
   ];
@@ -68,7 +68,7 @@ const About = () => {
             >
               <div className="relative">
                 <img
-                  src="https://github.com/m-soro/m-soro.github.io/blob/main/src/assets/images/z_profilePics/me002.jpg?raw=true"
+                  src="https://res.cloudinary.com/dmozohlzf/image/upload/v1746806756/me002_alns00.jpg"
                   alt="Mark Soro, in his U.S. Citizenhip ceremony"
                   className="w-full h-auto"
                 />
