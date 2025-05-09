@@ -61,9 +61,9 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Profile Image Column */}
-          <div className="md:col-span-1">
+          <div className="md:col-span-1 order-2 md:order-1 flex justify-center">
             <div
-              className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl border border-gray-700 overflow-hidden shadow-xl"
+              className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl border border-gray-700 overflow-hidden shadow-xl w-[70%] md:w-full"
               data-aos="fade-up"
             >
               <div className="relative">
@@ -83,7 +83,7 @@ const About = () => {
           </div>
 
           {/* Content Column */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 order-1 md:order-2">
             <div
               className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl border border-gray-700 p-8"
               data-aos="fade-up"
