@@ -192,10 +192,11 @@ const About = () => {
                       building digital solutions.
                     </p>
                     <p>
-                      Before diving into this program, I spent considerable time
-                      self-studying and working on personal projects, building a
-                      foundation that would later help me excel in more complex
-                      development environments.
+                      Before diving into this program, I built my foundation
+                      through countless hours with reading programming books and
+                      building personal projects, gradually developing the
+                      skills that would help me excel in more structured
+                      environments.
                     </p>
                     <p>
                       A major milestone in my journey was becoming a U.S.
