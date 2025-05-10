@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 const Hero = () => {
   const [text, setText] = useState("");
-  const fullText = "Salesforce Developer & Integration Specialist";
+  const fullText = "Software Developer | Salesforce Certified";
 
   useEffect(() => {
     let index = 0;
@@ -41,7 +41,7 @@ const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Software Developer | Salesforce Certified
+            {text}
           </h2>
           <p
             className="text-gray-300 max-w-xl mx-auto mb-8"

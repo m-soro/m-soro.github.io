@@ -101,14 +101,18 @@ const ProjectModal = ({ project, onClose }) => {
                 <Slider ref={sliderRef} {...settings}>
                   {project.images.map((img, index) => (
                     <div key={index} className="project-carousel-slide">
-                      <div className="modal-image-wrapper">
+                      <div
+                        className="modal-image-wrapper flex items-center justify-center"
+                        style={{ height: "400px" }}
+                      >
                         <img
                           src={img}
                           alt={`${project.title} - image ${index + 1}`}
-                          className="modal-carousel-image"
+                          className="modal-carousel-image max-h-full max-w-full"
                           style={{
                             objectFit: "contain",
                             objectPosition: "center",
+                            transform: "none",
                           }}
                         />
                       </div>
