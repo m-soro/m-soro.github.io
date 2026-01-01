@@ -8,16 +8,22 @@ const About = () => {
   // Certification badges
   const certifications = [
     {
-      title: "Salesforce Certified Administrator",
+      title: "Salesforce Certified Agentforce Specialist",
       image:
-        "https://res.cloudinary.com/dmozohlzf/image/upload/v1746806902/sys-admin-logo_u94wdr.png",
-      link: "https://trailhead.salesforce.com/en/credentials/administrator",
+        "https://res.cloudinary.com/dmozohlzf/image/upload/v1767300657/agentforce-specialist_extelw.png",
+      link: "https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=DjtwiSaYBq56hmr3fJufgKdWX8UWZaBISxxvm6N4YDL+OTDuFupo0kuMUKILA/TE",
     },
     {
       title: "Salesforce Certified Platform Developer I",
       image:
         "https://res.cloudinary.com/dmozohlzf/image/upload/v1746806912/pd1-logo_eu1cud.png",
-      link: "https://trailhead.salesforce.com/en/credentials/platformdeveloperi",
+      link: "https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=DjtwiSaYBq56hmr3fJufgKdWX8UWZaBISxxvm6N4YDL+OTDuFupo0kuMUKILA/TE",
+    },
+    {
+      title: "Salesforce Certified Administrator",
+      image:
+        "https://res.cloudinary.com/dmozohlzf/image/upload/v1746806902/sys-admin-logo_u94wdr.png",
+      link: "https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=DjtwiSaYBq56hmr3fJufgKdWX8UWZaBISxxvm6N4YDL+OTDuFupo0kuMUKILA/TE",
     },
   ];
 
@@ -25,8 +31,7 @@ const About = () => {
   const subheadings = {
     background:
       "A certified Salesforce developer with a passion for creating elegant solutions to complex problems.",
-    story:
-      "From hospitality professional to software developer — my story of transformation and growth.",
+    story: "From hospitality professional to software developer",
   };
 
   return (
