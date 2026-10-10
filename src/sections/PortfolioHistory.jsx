@@ -5,7 +5,7 @@ const PortfolioHistory = () => (
     <div className="sectionhead">
       <div>
         <div className="eyebrow">Portfolio time machine</div>
-        <h2>A few versions of me.</h2>
+        <h2>Earlier versions of me.</h2>
       </div>
       <p>The portfolio has changed as the work has changed. Take a look back.</p>
     </div>

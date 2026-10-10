@@ -76,7 +76,7 @@ export const prototypes = [
 
 export const experience = [
   {
-    date: "Current role",
+    date: "2025-present",
     title: "Salesforce Developer · Bridgepointe Technologies",
     bullets: [
       "Support and extend a production Salesforce environment used by internal teams and partner agencies.",
@@ -87,7 +87,7 @@ export const experience = [
     ],
   },
   {
-    date: "2024–2025 contributions",
+    date: "2024–2025",
     title: "Salesforce Developer · Accenture Federal Services",
     bullets: [
       "Built a REST integration supporting customer inquiries through an interactive voice response system.",
@@ -98,12 +98,12 @@ export const experience = [
   {
     date: "2023–2024",
     title: "Training · SkillStorm & Per Scholas",
-    text: "Completed Salesforce development training and a full-stack software engineering program. Team projects included a Salesforce utility management application.",
+    bullets: ["Completed Salesforce development training and a full-stack software engineering program. Team projects included a Salesforce utility management application."],
   },
   {
     date: "Before 2023",
     title: "Hospitality",
-    text: "Worked in luxury hotels while teaching myself to code. An early practical project was a scraper for finding employee discount rooms.",
+    bullets: ["Worked in luxury hotels while teaching myself to code. An early practical project was a scraper for finding employee discount rooms."],
   },
 ];
 
