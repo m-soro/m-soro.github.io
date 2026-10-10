@@ -153,10 +153,5 @@ export const portfolioVersions = [
     title: "The first dev job version",
     text: "Projects and professional contributions.",
     href: "https://m-soro.github.io/m-soro.github.io.v2/",
-  },
-  {
-    number: "03",
-    title: "This next chapter",
-    text: "Systems, skills, and the work behind them.",
-  },
+  }
 ];
