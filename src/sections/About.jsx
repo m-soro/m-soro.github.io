@@ -1,5 +1,6 @@
 import {
   certifications,
+  certificationsUrl,
   contactLinks,
   earlierProjects,
 } from "../data/portfolio";
@@ -17,25 +18,31 @@ const About = () => (
         />
         <p className="photo-caption">At my U.S. citizenship oath ceremony</p>
         <p>
-          I came to the U.S. from the Philippines knowing one person. I worked in
-          hotels for years and taught myself to code on the side, mostly from
-          books and small projects. In 2023 I finished a software engineering
-          program at Per Scholas and became a U.S. citizen in the same year.
+          I came to the U.S. from the Philippines knowing one person. I spent years working in 
+          luxury hotels while teaching myself to code through books and small projects.
+          In 2023 I finished a software engineering program at Per Scholas and became a U.S. citizen that same year.
+          I later trained in Salesforce development through SkillStorm, which helped me turn a personal interest
+          in programming into a new career.
         </p>
         <p>
-          I moved into Salesforce because I liked working on systems that real
-          teams depend on every day. I like understanding why something works,
-          not just getting the ticket done. When I'm not sure about an approach,
-          I build a quick version, test it, and try another one if it doesn't
-          feel right. I still have plenty to learn, and that's a big part of why
-          I enjoy this work.
+          What I enjoy most about development is figuring out how things work.
+          I like digging into unfamiliar systems, experimenting with different approaches, and 
+          understanding why something works rather than just getting it done.
+          When I'm curious about an idea, I'll often build a small prototype to see what's possible.
+          There's still plenty I don't know and that's part of what keeps this work interesting.
         </p>
         <p>Outside of work, I'm usually exploring the DC area with my partner.</p>
         <div className="badges">
           {certifications.map((cert) => (
-            <span className="badge" key={cert}>
-              {cert}
-            </span>
+            <a
+              className="badge"
+              key={cert}
+              href={certificationsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {cert} ↗
+            </a>
           ))}
         </div>
       </div>

@@ -88,7 +88,7 @@ export const experience = [
   },
   {
     date: "2024–2025 contributions",
-    title: "Salesforce Developmer · Accenture Federal Services",
+    title: "Salesforce Developer · Accenture Federal Services",
     bullets: [
       "Built a REST integration supporting customer inquiries through an interactive voice response system.",
       "Developed connected Flows for inquiry routing and service workflows.",
@@ -106,6 +106,9 @@ export const experience = [
     text: "Worked in luxury hotels while teaching myself to code. An early practical project was a scraper for finding employee discount rooms.",
   },
 ];
+
+export const certificationsUrl =
+  "https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=DjtwiSaYBq56hmr3fJufgKdWX8UWZaBISxxvm6N4YDL+OTDuFupo0kuMUKILA/TE";
 
 export const certifications = [
   "Platform Developer I",
