@@ -38,7 +38,7 @@ const Hero = () => (
             External integrations<small>APIs · Systems · Data</small>
           </div>
           <div className="map-item west">
-            Internal teams<small>Operations & advisors</small>
+            Internal teams<small>Operations & Stakeholders</small>
           </div>
           <div className="map-item center">
             Salesforce<small>Apex · LWC · Aura</small>

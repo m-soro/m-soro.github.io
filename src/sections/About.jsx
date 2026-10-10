@@ -44,7 +44,7 @@ const About = () => (
         <div className="eyebrow">Contact</div>
         <h2>Let’s connect.</h2>
         <p>
-          For Salesforce development, integration support, or a conversation
+          For Salesforce development or support, or a conversation
           about your team’s systems, get in touch.
         </p>
         {contactLinks.map((link) => (

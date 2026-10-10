@@ -88,7 +88,7 @@ export const experience = [
   },
   {
     date: "2024–2025 contributions",
-    title: "Salesforce Development · Federal Government Projects",
+    title: "Salesforce Developmer · Accenture Federal Services",
     bullets: [
       "Built a REST integration supporting customer inquiries through an interactive voice response system.",
       "Developed connected Flows for inquiry routing and service workflows.",
@@ -147,7 +147,7 @@ export const portfolioVersions = [
   },
   {
     number: "02",
-    title: "The project showcase",
+    title: "The first dev job version",
     text: "Projects and professional contributions.",
     href: "https://m-soro.github.io/m-soro.github.io.v2/",
   },

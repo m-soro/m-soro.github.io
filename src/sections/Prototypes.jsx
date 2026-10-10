@@ -53,7 +53,7 @@ const Prototypes = () => (
 
     <p className="production-note">
       <span>From prototype to production</span> Findings from my Coral Cloud
-      prototype helped inform the team’s production implementation: vector search
+      AI assistant prototype helped inform the team’s production implementation: vector search
       for contextual questions, and live Salesforce queries for exact, current
       record data.
     </p>
